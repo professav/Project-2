@@ -5,4 +5,9 @@ Team Apollo is currently conducting data model implementation, optimization and 
 
 
 #### Roster List
-Timothy Heidcamp, Duane Anglin, Aniel Rios, Vanessa Wright, Daniyar Temirkhanov, Riley (Josephine) Robideau
+ - Heidcamp, Timothy
+ - Anglin, Duane
+ - Rios, Aniel
+ - Wright, Vanessa
+ - Temirkhanov, Daniyar
+ - Robideau, Riley (Josephine)
