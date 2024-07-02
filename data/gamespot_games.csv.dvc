@@ -1,0 +1,5 @@
+outs:
+- md5: 6b72709a787ad6813d14207b869f95b2
+  size: 360142773
+  hash: md5
+  path: gamespot_games.csv
