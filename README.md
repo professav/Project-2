@@ -12,3 +12,6 @@ Team Apollo is currently conducting data model implementation, optimization and 
 - Vanessa Wright
 - Daniyar Temirkhanov
 - Riley (Josephine) Robideau
+---
+References
+- [Game Reviews Dataset](https://www.kaggle.com/datasets/sridharstreaks/game-reviews-dataset?resource=download&select=review_info.csv)
