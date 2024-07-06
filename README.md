@@ -10,7 +10,9 @@ Team Apollo is currently conducting data model implementation, optimization and 
 - Daniyar Temirkhanov 
 - Riley (Josephine) Robideau
 
+[**Click this link to Summmary Doc** (Will delete this from our repo before project submission)**](https://docs.google.com/document/d/1_uuymdDroABmK8becVYevVApo8j1_2vc_oRuBR6Cp7w/edit)
+
 
 # References
-- https://www.kaggle.com/datasets/sridharstreaks/game-reviews-dataset/data (Game Reviews Dataset by Shashank Kalanithi)
-- https://github.com/Jmp13033/reccomendation_system/tree/master/app/helpers (Jared's Recommedation System Data Analysis)
+- [Game Reviews Dataset by Shashank Kalanithi](https://www.kaggle.com/datasets/sridharstreaks/game-reviews-dataset/data)
+- [Jared's Recommedation System Data Analysis](https://github.com/Jmp13033/reccomendation_system/tree/master/app/helpers)
