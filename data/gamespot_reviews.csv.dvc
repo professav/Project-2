@@ -1,5 +1,5 @@
 outs:
-- md5: c9e39ece8eafcf40e1125fd716d2c9a8
-  size: 87996180
+- md5: 78cc795c447f18ff29362c5fe0f38a57
+  size: 10152
   hash: md5
   path: gamespot_reviews.csv
