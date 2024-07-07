@@ -1,0 +1,5 @@
+outs:
+- md5: f42850bfa86a10cf29fd96580ab471ae
+  size: 63540059
+  hash: md5
+  path: author_info.csv
