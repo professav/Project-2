@@ -1,0 +1,4 @@
+[core]
+    remote = digital-ocean
+['remote "digital-ocean"']
+    url = s3://gamerecenginestorage/DO00GNQ8NAUZZZW8F2D3
