@@ -87,7 +87,7 @@ From the app folder, run:
 - Sklearn.neighbors (A submodule of scikit-learn *(sklearn)* used for identifying nearest neighbors and includes methods for classification, regression, and clustering)
 - Sklearn.neighbors (NearestNeighbor: A class within Sklearn.neighbors used to find K nearest neighbor)
 
-### Visuals Do we want another title here since we only have ONE visual?? Maybe "Team Apollo's Gaming Match App"  ???
+### Team Apollo's Gaming Match App
 
 ![image](https://github.com/professav/Project-2/assets/163040617/ecd9b408-aadb-4912-9f84-1072754b7437)
 
