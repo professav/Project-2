@@ -4,6 +4,7 @@
 # Project 2 Overview
 Team Apollo is currently conducting data model implementation, optimization, and GitHub documentation. We have considered a videogame recommendation system via the Gamespot and Steam platforms.
 
+
 ## Roster List
 Team Apollo includes:
 - Timothy Heidcamp
@@ -13,9 +14,9 @@ Team Apollo includes:
 - Daniyar Temirkhanov 
 - Riley (Josephine) Robideau
 
+
 ## Purpose
 The primary purpose of this project is to provide the next generation of gamers with the optimal online experience, we are introducing a cutting-edge personalized recommendation system that tailors game suggestions based on users' individual preferences and comprehensive game reviews. By implementing a sophisticated system utilizing the K-Nearest Neighbor (KNN) algorithm, we ensure that gamers receive highly relevant and accurate recommendations, streamlining their game discovery process. This advanced algorithm analyzes various data points to identify patterns and similarities among users, delivering personalized game suggestions that match their unique tastes and interests. By minimizing the trial-and-error, gamers can now lead their new online adventure with less time, energy, and money wasted on games they may not like.
-
 
 
 ## Goals & Problems Solved
@@ -25,12 +26,15 @@ The primary purpose of this project is to provide the next generation of gamers 
 - Our platform features intuitive interfaces that simplify searching gaming options based on classification and affordability. 
 - Our system is designed to be quick, easy, and effective.
 
+
 ## Process
-### Data Collection; Cleanup; Exploration Process
-- In our first attempt to collect data, we used Steam. Some of us were not able to download a set of games. Also, all of our team members have varying operating systems (PC/Mac), which affects data collection from Steam.
+### Data Collection and Cleanup
+- In our first attempt to collect data, we used Steam. Some of us were not able to download a set of games. Also, all of our team members have varying operating systems (PC/Mac), which affected data collection for our project.
 - For our next attempt, we gathered a dataset from Kaggle, but unfortunately, the dataset was not large enough for data manipulation, with only 14 entries.
-    - We reviewed value counts, displayed recommended value counts, and weighed value counts to verify whether the data was sufficient.
-    - To clean up the initial data, we;
+
+### Cleanup
+- We reviewed value counts, displayed recommended value counts, and weighed value counts to verify whether the data was sufficient.
+- To clean up the initial data, we;
     - Merged all data on review ID
     - Filtered the main data frame on ID, app name, and recommendation (True/False)
     - Converted DataFrame to CSV
@@ -41,18 +45,24 @@ The primary purpose of this project is to provide the next generation of gamers 
     - Made game_pivot, used pivot function for game data : index = app name, columns = Author ID, made values = recommendation
     - Filled the NA values for the game_pivot table with 0
 
+### Exploration Process
+ After exploring several datasets regarding reviews from varied and distinct gaming websites, the final decision was to build our app using the data from kaggel and then retrain our model when we pulled more data using the steam apis.
+
 ### Recreate System
 To achieve your objective, implement the following strategy with the tools provided:
-- Clean and organize your data; apply a pivot table using the pandas package
-- Apply a sparse matrix to the data using spicy.sparse
-- Fit your data into a KNN model
-- Vectorize your inputs and determine likely matches using NumPy
-<br>
 
-You are now ready to suggest with confidence the likely matches for a user given a set of games they like.
+	1. Clean and organize your data
+ 	2. Apply a pivot table using the pandas package
+	2. Apply a sparse matrix to the data using spicy.sparse
+	3. Fit your data into a KNN model
+	4. Vectorize your inputs and determine likely matches using NumPy
+
+*You are now ready to suggest with confidence the likely matches for a user given a set of games they like.*
 
 From the app folder, run:
-`fastapi dev .\main.py`
+
+	fastapi dev .\main.py
+
 ![FastAPI](https://github.com/professav/Project-2/assets/163040617/4eeda4ee-fdde-479d-99b8-2463f8820ab9)
 
 ### Tools Used
@@ -70,47 +80,38 @@ From the app folder, run:
 - Sklearn.neighbors (A submodule of scikit-learn *(sklearn)* used for identifying nearest neighbors and includes methods for classification, regression, and clustering)
 - Sklearn.neighbors (NearestNeighbor: A class within Sklearn.neighbors used to find K nearest neighbor)
 
-### Visuals
+### Team Apollo's Gaming Match App
+
 ![image](https://github.com/professav/Project-2/assets/163040617/ecd9b408-aadb-4912-9f84-1072754b7437)
 
-### Summary
+
+<hr>
+	
+## Summary
 Team Apollo's project aimed to create a robust recommendation system for video games, leveraging data from various sources and employing advanced data processing techniques. Despite facing various challenges, we successfully implemented a system that can provide personalized game recommendations. By utilizing tools and resources, we ensured that our methodology was both efficient and effective.
 We believe that this recommendation system can be a valuable tool for gamers looking to discover new games based on their preferences and past reviews. We look forward to further refining and expanding the system in future iterations.
+<br>
 
-### Problems Encountered
-	VI.A. Limited steam access
-	VI.A.1. One significant challenge was the limited access to Steam's API keys due to the team's small Steam libraries. This limitation hindered our ability to download games and fully utilize Steam's API for data collection.
-	VI.B. Hesitancy to use game spot
-	VI.B.1. There was some hesitation within the team regarding the use of Game Spot due to its relatively small number of reviewers. This concern was based on the potential lack of diversity in the reviews, which could impact the accuracy of our recommendation system.
-	VI.C. Finding new data, after concluding ours needed a larger scale 
-	VI.C.1. Ask Tim for his summary on this.
+## Problems Encountered
+> - One significant challenge was the limited access to Steam's API keys due to the team's small Steam libraries. This limitation hindered our ability to download games and fully utilize Steam's API for data collection.
+> - Hesitancy to use game spot
+> - There was some hesitation within the team regarding the use of Game Spot due to its relatively small number of reviewers. This concern was based on the potential lack of diversity in the reviews, which could impact the accuracy of our recommendation system.
+> - Finding new data, after concluding ours needed a larger scale
+<br>
 
-### Future Considerations
-	VII.A. Explore different data options, and assess possible challenges before committing to a resource.
-	VII.B. Troubleshoot every issue for every team member before continuing the project, to ensure there are no serious roadblocks for anyone that could lead to needing a new source.
-	VII.C. Look at the extend of the data we have, and think ahead to possible challenges rated to data availability that could potentially be avoided with further exploration early on.
-	VII.D. Research similar objectives done by other people or companies (if possible) to think about the challenges they faced along the way, if they were easily avoidable, and if we can do anything to better avoid challenges by strategic planning.
-	VII.E. Think more about how to best distribute work to team members, and how we can all best contribute during team meetings without being disruptive to any individual, or smaller group within the team. 
-	VII.E.1. Two breakout rooms for our team (including moments of coming back together in one breakout room to get all updates) seemed to work best, since the whole team did not need to contribute to the syntax, and a smaller group within our team could be in another breakout room working on another task or troubleshooting an issue, helping the team stay as efficient as possible.
-Team Questions (YET TO BE ANSWERED):
-Is there anything that needs to be added (besides things already noted in red)
-Were there any challenges we faced that we did not yet recognize on this log? …Vanessa?
-Does anyone have anything to add for future considerations?
-Can everyone download and edit this doc without any issues? - If not message me
-Does everyone agree with my highlighted suggestions for the first two sections of this doc? (Project purpose & Goals / Problem to be solved)
-Are we able to combine the answer for those two (Project purpose & Goals / Problem to be solved), or does it need to be a separate answer for both? Would we be docked points for using one answer for both questions, even though it would answer both questions?
-What are our metrics, and how do we incorporate them? …Revati?
-Do we need a further explanation on how the recommendation system actually works? (Syntactically) ….Tim? ….Jared?
-Should we have converted the CSV after we dropped the duplicates? Can we still do that? Does it make a big enough difference to take the time to do so?
-Tim: Can you give us a summary for the challenge encountered relating to starting over with fresh data?
-Aniel: Any suggestions for the doc? Is there anything that needs to be clarified, or is confusing when reading through? - Also, can we get a separate doc strictly for the readme?
-Does the Data c, c, & e summary need to be better/more in depth?
-Any suggestions or thoughts?
-Video made by Duane included high-quality graphics, reducing the frustration of lag and glitches 
+## Future Considerations
+> - Explore different data options, and assess possible challenges before committing to a resource.
+> - Troubleshoot every issue for every team member before continuing the project, to ensure there are no serious roadblocks for anyone that could lead to needing a new source.
+> - Look at the extend of the data we have, and think ahead to possible challenges rated to data availability that could potentially be avoided with further exploration early on.
+> - Research similar objectives done by other people or companies (if possible) to think about the challenges they faced along the way, if they were easily avoidable, and if we can do anything to better avoid challenges by strategic planning.
+> - Think more about how to best distribute work to team members, and how we can all best contribute during team meetings without being disruptive to any individual, or smaller group within the team. 
+> - Two breakout rooms for our team (including moments of coming back together in one breakout room to get all updates) seemed to work best, since the whole team did not need to contribute to the syntax, and a smaller group within our team could be in another breakout room working on another task or troubleshooting an issue, helping the team stay as efficient as possible.
+<br>
 
-[**Click this link to Summmary Doc** (Will delete this from our repo before project submission)**](https://docs.google.com/document/d/1_uuymdDroABmK8becVYevVApo8j1_2vc_oRuBR6Cp7w/edit)
+<hr>
 
-# Resources
+
+## Resources
 - [Game Reviews Dataset by Shashank Kalanithi](https://www.kaggle.com/datasets/sridharstreaks/game-reviews-dataset/data)
 - [Jared's Recommedation System Data Analysis](https://github.com/Jmp13033/reccomendation_system/tree/master/app/helpers)
 - [Runway](https://app.runwayml.com)
@@ -118,3 +119,5 @@ Video made by Duane included high-quality graphics, reducing the frustration of 
 - [Narakeet](https://www.narakeet.com)
 - [Final Cut Pro](https://www.apple.com/final-cut-pro/) 
 - [Adobe Photoshop](https://www.adobe.com/products/photoshop/landpa.html?gclid=CjwKCAjwnK60BhA9EiwAmpHZw6BSusCcXE6LUb_ohdht07UVhbxYpBynGabLDEu4H94mWq3J0_93LRoCbv8QAvD_BwE&sdid=NC5FRF5H&mv=search&mv2=paidsearch&ef_id=CjwKCAjwnK60BhA9EiwAmpHZw6BSusCcXE6LUb_ohdht07UVhbxYpBynGabLDEu4H94mWq3J0_93LRoCbv8QAvD_BwE:G:s&s_kwcid=AL!3085!3!697384330723!e!!g!!adobe%20photoshop!1712238394!67643541820&mv=search&gad_source=1)
+- [Steam marketplace](https://api.steamapis.com) *used to get list of game titles with app_ids*
+- [Steam store](https://store.steampowered.com) *used to get user reviews and sentiments*
