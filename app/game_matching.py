@@ -7,9 +7,9 @@ import numpy as np
 from fuzzywuzzy import fuzz, process
 
 # load game review data and create pivot table
-game_reviews = pd.read_csv('../data/steam/combined.csv')
+game_reviews = pd.read_csv('../data/steam/cleaned_dataset.csv')
 
-game_pivot = game_reviews.pivot_table(index='app_name', columns='author.steamid', values='recommended')
+game_pivot = game_reviews.pivot_table(index='name', columns='author', values='recommended')
 game_pivot = game_pivot.fillna(0)
 
 # create a sparse matrix
