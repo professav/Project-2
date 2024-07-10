@@ -34,7 +34,7 @@ The primary purpose of this project is to provide the next generation of gamers 
 
 ### Cleanup
 - We reviewed value counts, displayed recommended value counts, and weighed value counts to verify whether the data was sufficient.
-- To clean up the initial data, we;
+- To clean up the initial data, we:
     - Merged all data on review ID
     - Filtered the main data frame on ID, app name, and recommendation (True/False)
     - Converted DataFrame to CSV
