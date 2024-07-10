@@ -58,7 +58,8 @@ The primary purpose of this project is to provide the next generation of gamers 
 ### Recreate System
 To achieve your objective, implement the following strategy with the tools provided:
 
-	1. Clean and organize your data; apply a pivot table using the pandas package
+	1. Clean and organize your data
+ 	2. Apply a pivot table using the pandas package
 	2. Apply a sparse matrix to the data using spicy.sparse
 	3. Fit your data into a KNN model
 	4. Vectorize your inputs and determine likely matches using NumPy
@@ -114,27 +115,6 @@ We believe that this recommendation system can be a valuable tool for gamers loo
 > - Think more about how to best distribute work to team members, and how we can all best contribute during team meetings without being disruptive to any individual, or smaller group within the team. 
 > - Two breakout rooms for our team (including moments of coming back together in one breakout room to get all updates) seemed to work best, since the whole team did not need to contribute to the syntax, and a smaller group within our team could be in another breakout room working on another task or troubleshooting an issue, helping the team stay as efficient as possible.
 <br>
-
-<hr>
-
-
-**I think we addressed it all last night. Let me know if you want to delete below (up to Resources section). We can go through the question list together.**
-
-Team Questions (YET TO BE ANSWERED):
-- Is there anything that needs to be added (besides things already noted in red)
-- Were there any challenges we faced that we did not yet recognize on this log? …Vanessa?
-- Does anyone have anything to add for future considerations?
-- Can everyone download and edit this doc without any issues? - If not message me
-- Does everyone agree with my highlighted suggestions for the first two sections of this doc? (Project purpose & Goals / Problem to be solved)
-- Are we able to combine the answer for those two (Project purpose & Goals / Problem to be solved), or does it need to be a separate answer for both? Would we be docked points for using one answer for both questions, even though it would answer both questions?
-- What are our metrics, and how do we incorporate them? …Revati?
-- Do we need a further explanation on how the recommendation system actually works? (Syntactically) ….Tim? ….Jared?
-- Should we have converted the CSV after we dropped the duplicates? Can we still do that? Does it make a big enough difference to take the time to do so?
-- Tim: Can you give us a summary for the challenge encountered relating to starting over with fresh data?
-- Aniel: Any suggestions for the doc? Is there anything that needs to be clarified, or is confusing when reading through? - Also, can we get a separate doc strictly for the readme?
-- Does the Data c, c, & e summary need to be better/more in depth?
-- Any suggestions or thoughts? Video made by Duane included high-quality graphics, reducing the frustration of lag and glitches Special thanks to our whole team!
-
 
 <hr>
 
