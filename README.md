@@ -100,7 +100,6 @@ We believe that this recommendation system can be a valuable tool for gamers loo
 <br>
 
 ## Problems Encountered
-> Limited Steam access
 > - One significant challenge was the limited access to Steam's API keys due to the team's small Steam libraries. This limitation hindered our ability to download games and fully utilize Steam's API for data collection.
 > - Hesitancy to use game spot
 > - There was some hesitation within the team regarding the use of Game Spot due to its relatively small number of reviewers. This concern was based on the potential lack of diversity in the reviews, which could impact the accuracy of our recommendation system.
