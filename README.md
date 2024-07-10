@@ -46,14 +46,7 @@ The primary purpose of this project is to provide the next generation of gamers 
     - Filled the NA values for the game_pivot table with 0
 
 ### Exploration Process
- After exploring several datasets regarding reviews from varied and distinct gaming websites, the final decision was...
-- Ask
-- Tim
-- for
-- his
-- summary
-- on
-- this.
+ After exploring several datasets regarding reviews from varied and distinct gaming websites, the final decision was to build our app using the data from kaggel and then retrain our model when we pulled more data using the steam apis.
 
 ### Recreate System
 To achieve your objective, implement the following strategy with the tools provided:
@@ -126,3 +119,5 @@ We believe that this recommendation system can be a valuable tool for gamers loo
 - [Narakeet](https://www.narakeet.com)
 - [Final Cut Pro](https://www.apple.com/final-cut-pro/) 
 - [Adobe Photoshop](https://www.adobe.com/products/photoshop/landpa.html?gclid=CjwKCAjwnK60BhA9EiwAmpHZw6BSusCcXE6LUb_ohdht07UVhbxYpBynGabLDEu4H94mWq3J0_93LRoCbv8QAvD_BwE&sdid=NC5FRF5H&mv=search&mv2=paidsearch&ef_id=CjwKCAjwnK60BhA9EiwAmpHZw6BSusCcXE6LUb_ohdht07UVhbxYpBynGabLDEu4H94mWq3J0_93LRoCbv8QAvD_BwE:G:s&s_kwcid=AL!3085!3!697384330723!e!!g!!adobe%20photoshop!1712238394!67643541820&mv=search&gad_source=1)
+- [Steam marketplace](https://api.steamapis.com) *used to get list of game titles with app_ids*
+- [Steam store](https://store.steampowered.com) *used to get user reviews and sentiments*
