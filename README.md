@@ -111,6 +111,11 @@ We believe that this recommendation system can be a valuable tool for gamers loo
 <hr>
 
 
+https://github.com/user-attachments/assets/8b0e31ff-8567-459d-8514-421929b21d2f
+
+
+<hr>
+
 ## Resources
 - [Game Reviews Dataset by Shashank Kalanithi](https://www.kaggle.com/datasets/sridharstreaks/game-reviews-dataset/data)
 - [Jared's Recommedation System Data Analysis](https://github.com/Jmp13033/reccomendation_system/tree/master/app/helpers)
