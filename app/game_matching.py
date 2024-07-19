@@ -5,19 +5,16 @@ from sklearn.neighbors import NearestNeighbors
 from typing import List
 import numpy as np
 from fuzzywuzzy import fuzz, process
+import pyarrow.parquet as pq
+import pickle
+import sys
+
 
 # load game review data and create pivot table
-game_reviews = pd.read_csv('../data/steam/cleaned_dataset.csv')
-
-game_pivot = game_reviews.pivot_table(index='name', columns='author', values='recommended')
-game_pivot = game_pivot.fillna(0)
-
-# create a sparse matrix
-games_sparse = csr_matrix(game_pivot)
+game_pivot = pq.read_table('data/game_pivot.parquet', thrift_container_size_limit=(999000000), thrift_string_size_limit=(999000000)).to_pandas()
 
 # create a nearest neighbors model
-model_knn = NearestNeighbors(algorithm='brute', n_neighbors=7)
-model_knn.fit(games_sparse)
+model_knn = pickle.load(open('models/knn.pkl', 'rb'))
 
 # method for getting vectors from a dataframe and a list of game titles
 def get_vectors(df: pd.DataFrame, game_titles: List[str]) -> np.ndarray:
